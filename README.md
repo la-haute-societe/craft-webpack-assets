@@ -48,7 +48,10 @@ return [
 
 - Add the following packages :
 ```
-yarn add html-webpack-plugin write-file-webpack-plugin underscore-template-loader
+yarn add html-webpack-plugin write-file-webpack-plugin underscore-template-loader -D
+
+# Or
+npm install html-webpack-plugin write-file-webpack-plugin underscore-template-loader --save-dev
 ```
 
 - Create a ``assets-files.json.tpl`` file with this content :
