@@ -16,6 +16,9 @@
     ...
    
     {{ craft.webpackAssets.cssTags() | raw }}
+    
+    ... Or with chunk name ...
+    {{ craft.webpackAssets.cssTags('app') | raw }}
    
     ...
 </head>
@@ -23,6 +26,11 @@
 ...
 
 {{ craft.webpackAssets.jsTags() | raw }}
+
+... Or with chunk name ...
+
+{{ craft.webpackAssets.jsTags('app') | raw }}
+{{ craft.webpackAssets.jsTags('libs') | raw }}
 
 ...
 </body>

@@ -7,10 +7,12 @@ class WebpackAssetsVariable
 {
     /**
      * Return CSS tags
+     * @param string|array $chunkNames [optional] A list of webpack chunk names used to filter the CSS assets returned
+     * @return string HTML tags
      */
-    public function cssTags()
+    public function cssTags($chunkNames = null)
     {
-        $files = craft()->webpackAssets_jsonReader->getCssFiles();
+        $files = craft()->webpackAssets_jsonReader->getCssFiles($chunkNames);
         $tags = implode("\r\n", array_map([$this, 'getCssTagFromFile'], $files));
 
         return $tags;
@@ -18,10 +20,12 @@ class WebpackAssetsVariable
 
     /**
      * Return Js tags
+     * @param string|array $chunkNames [optional] A list of webpack chunk names used to filter the CSS assets returned
+     * @return string HTML tags
      */
-    public function jsTags()
+    public function jsTags($chunkNames = null)
     {
-        $files = craft()->webpackAssets_jsonReader->getJsFiles();
+        $files = craft()->webpackAssets_jsonReader->getJsFiles($chunkNames);
 
         $tags = implode("\r\n", array_map([$this, 'getJsTagFromFile'], $files));
 
