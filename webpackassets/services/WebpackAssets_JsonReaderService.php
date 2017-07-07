@@ -90,6 +90,8 @@ class WebpackAssets_JsonReaderService extends BaseApplicationComponent
             }
         }
 
+        $paths = $this->transformToAbsolutePath($paths);
+
         return $paths;
     }
 
@@ -115,6 +117,34 @@ class WebpackAssets_JsonReaderService extends BaseApplicationComponent
             }
         }
 
+        $paths = $this->transformToAbsolutePath($paths);
+
         return $paths;
+    }
+
+    /**
+     * Transform all paths to absolute path
+     * @param $paths array
+     * @return array
+     */
+    private function transformToAbsolutePath($paths)
+    {
+        return array_map(function ($path) {
+            if ($this->isRelativePath($path)) {
+                return \Craft\craft()->config->get('siteUrl') . $path;
+            }
+
+            return $path;
+        }, $paths);
+    }
+
+    /**
+     * Return true if $path is a relative path
+     * @param $path string
+     * @return bool
+     */
+    private function isRelativePath($path)
+    {
+        return substr($path, 0, '4') != 'http';
     }
 }
