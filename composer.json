@@ -11,7 +11,7 @@
         "webpackassets"
     ],
     "support": {
-        "docs": "https://github.com/la-haute-societe/webpack-assets-craft-plugin/webpack-assets/blob/master/README.md",
+        "docs": "https://github.com/la-haute-societe/webpack-assets-craft-plugin/blob/master/README.md",
         "issues": "https://github.com/la-haute-societe/webpack-assets-craft-plugin/webpack-assets/issues"
     },
     "license": "MIT",
