@@ -1,0 +1,44 @@
+{
+    "name": "lahautesociete/webpack-assets",
+    "description": "Webpack assets for craft cms",
+    "type": "craft-plugin",
+    "version": "2.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "webpackassets"
+    ],
+    "support": {
+        "docs": "https://github.com/la-haute-societe/webpack-assets-craft-plugin/webpack-assets/blob/master/README.md",
+        "issues": "https://github.com/la-haute-societe/webpack-assets-craft-plugin/webpack-assets/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "La Haute Société",
+            "homepage": "https://www.lahautesociete.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "lahautesociete\\webpackassets\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "WebpackAssets",
+        "handle": "webpack-assets",
+        "schemaVersion": "2.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/la-haute-societe/webpack-assets-craft-plugin/webpack-assets/master/CHANGELOG.md",
+        "components": {
+            "jsonReader": "lahautesociete\\webpackassets\\services\\JsonReader"
+        },
+        "class": "lahautesociete\\webpackassets\\WebpackAssets"
+    }
+}
