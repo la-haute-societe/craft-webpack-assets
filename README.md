@@ -3,7 +3,7 @@
 ## Install
 
 ```
-composer require lahautesociete/webpack-assets 
+composer require la-haute-societe/craft-webpack-assets 
 ```
 
 
