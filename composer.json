@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-          "lahautesociete\\webpackassets\\": "src/"
+          "lhs\\webpackassets\\": "src/"
         }
     },
     "extra": {

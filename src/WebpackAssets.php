@@ -10,8 +10,8 @@
 
 namespace lhs\webpackassets;
 
-use lahautesociete\webpackassets\services\JsonReader as JsonReaderService;
-use lahautesociete\webpackassets\variables\WebpackAssetsVariable;
+use lhs\webpackassets\services\JsonReader as JsonReaderService;
+use lhs\webpackassets\variables\WebpackAssetsVariable;
 
 use Craft;
 use craft\base\Plugin;
