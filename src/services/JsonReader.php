@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2018 La Haute Société
  */
 
-namespace lahautesociete\webpackassets\services;
+namespace lhs\webpackassets\services;
 
-use lahautesociete\webpackassets\WebpackAssets;
+use lhs\webpackassets\WebpackAssets;
 
 use Craft;
 use craft\base\Component;

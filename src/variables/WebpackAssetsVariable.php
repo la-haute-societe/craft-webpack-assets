@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2018 La Haute Société
  */
 
-namespace lahautesociete\webpackassets\variables;
+namespace lhs\webpackassets\variables;
 
-use lahautesociete\webpackassets\WebpackAssets;
+use lhs\webpackassets\WebpackAssets;
 
 use Craft;
 

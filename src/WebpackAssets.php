@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2018 La Haute Société
  */
 
-namespace lahautesociete\webpackassets;
+namespace lhs\webpackassets;
 
 use lahautesociete\webpackassets\services\JsonReader as JsonReaderService;
 use lahautesociete\webpackassets\variables\WebpackAssetsVariable;
