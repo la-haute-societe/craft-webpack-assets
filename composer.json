@@ -36,6 +36,7 @@
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/la-haute-societe/craft-webpack-assets/webpack-assets/master/CHANGELOG.md",
+        "documentationUrl": "https://github.com/la-haute-societe/craft-webpack-assets/blob/master/README.md",
         "components": {
             "jsonReader": "lhs\\webpackassets\\services\\JsonReader"
         },
