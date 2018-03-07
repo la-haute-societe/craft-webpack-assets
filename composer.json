@@ -11,8 +11,8 @@
         "webpackassets"
     ],
     "support": {
-        "docs": "https://github.com/la-haute-societe/webpack-assets-craft-plugin/blob/master/README.md",
-        "issues": "https://github.com/la-haute-societe/webpack-assets-craft-plugin/webpack-assets/issues"
+        "docs": "https://github.com/la-haute-societe/craft-webpack-assets/blob/master/README.md",
+        "issues": "https://github.com/la-haute-societe/craft-webpack-assets/webpack-assets/issues"
     },
     "license": "MIT",
     "authors": [
@@ -35,7 +35,7 @@
         "schemaVersion": "2.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/la-haute-societe/webpack-assets-craft-plugin/webpack-assets/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/la-haute-societe/craft-webpack-assets/webpack-assets/master/CHANGELOG.md",
         "components": {
             "jsonReader": "lhs\\webpackassets\\services\\JsonReader"
         },
