@@ -12,6 +12,8 @@ namespace lhs\webpackassets\services;
 
 use lhs\webpackassets\WebpackAssets;
 
+use \Exception;
+
 use Craft;
 use craft\base\Component;
 
