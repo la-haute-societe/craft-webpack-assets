@@ -2,7 +2,6 @@
     "name": "la-haute-societe/craft-webpack-assets",
     "description": "Webpack assets for craft cms",
     "type": "craft-plugin",
-    "version": "2.0.0",
     "keywords": [
         "craft",
         "cms",
