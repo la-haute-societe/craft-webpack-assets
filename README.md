@@ -5,7 +5,7 @@ A simple plugin allowing to handle [Webpack](https://webpack.js.org) generated C
 ## Requirements
 
 This plugin requires **Craft CMS 3.0.0-RC1** or later.
-It is intended to work with **Webpack 2**.
+It is intended to work with **Webpack 2 or 3**.
 
 ### Installation
 
