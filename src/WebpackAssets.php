@@ -15,8 +15,6 @@ use lhs\webpackassets\variables\WebpackAssetsVariable;
 
 use Craft;
 use craft\base\Plugin;
-use craft\services\Plugins;
-use craft\events\PluginEvent;
 use craft\web\twig\variables\CraftVariable;
 
 use yii\base\Event;
@@ -32,16 +30,11 @@ use yii\base\Event;
  */
 class WebpackAssets extends Plugin
 {
-    // Static Properties
-    // =========================================================================
-
     /**
      * @var WebpackAssets
      */
     public static $plugin;
 
-    // Public Methods
-    // =========================================================================
 
     /**
      * @inheritdoc
@@ -61,15 +54,6 @@ class WebpackAssets extends Plugin
             }
         );
 
-        Event::on(
-            Plugins::class,
-            Plugins::EVENT_AFTER_INSTALL_PLUGIN,
-            function (PluginEvent $event) {
-                if ($event->plugin === $this) {
-                }
-            }
-        );
-
         Craft::info(
             Craft::t(
                 'webpack-assets',
@@ -79,8 +63,5 @@ class WebpackAssets extends Plugin
             __METHOD__
         );
     }
-
-    // Protected Methods
-    // =========================================================================
 
 }
