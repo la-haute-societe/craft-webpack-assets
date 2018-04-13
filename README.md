@@ -11,7 +11,7 @@ It is intended to work with **Webpack 2 or 3**.
 
 - Install with composer from your project directory:
 ```
-composer require la-hautes-societe/craft-webpack-assets 
+composer require la-haute-societe/craft-webpack-assets 
 ```
 
 ### Webpack setup
