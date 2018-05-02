@@ -94,4 +94,16 @@ In your Twig templates, you can include your Webpack generated assets as follow:
 </html>
 ```
 
+You can detect if the public path provided by webpack is an absolute URL with the method `isPublicPathAbsoluteUrl` (this is the case when assets are served by Webpack).
+
+If needed, you can override the webpack public path at runtime when this path is not absolute :
+```
+{# injecte le public path au runtime car pas connu au build. __webpack_public_path__ #}
+{% if not craft.webpackAssets.isPublicPathAbsoluteUrl() %}
+<script>
+    runtime_webpack_public_path = '{{ siteUrl }}assets/';
+</script>
+{% endif %}
+```
+
 Brought to you by ![LHS Logo](resources/img/lhs.png) [La Haute Société](https://www.lahautesociete.com)
