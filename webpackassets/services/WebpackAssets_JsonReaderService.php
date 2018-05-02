@@ -123,6 +123,23 @@ class WebpackAssets_JsonReaderService extends BaseApplicationComponent
     }
 
     /**
+     * Return true if publicPaht is absolute URL.
+     * @return bool
+     * @throws Exception
+     */
+    public function isPublicPathAbsoluteUrl()
+    {
+        $webpackOutput = $this->getDataFromJson();
+        if (!isset($webpackOutput["files"]) || !isset($webpackOutput["files"]["publicPath"])) {
+            return false;
+        }
+
+        $publicPath = $webpackOutput['files']['publicPath'];
+        $startWithHttp = (strpos($publicPath, 'http') === 0);
+        return $startWithHttp;
+    }
+
+    /**
      * Transform all paths to absolute path
      * @param $paths array
      * @return array
