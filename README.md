@@ -98,7 +98,6 @@ You can detect if the public path provided by webpack is an absolute URL with th
 
 If needed, you can override the webpack public path at runtime when this path is not absolute :
 ```
-{# injecte le public path au runtime car pas connu au build. __webpack_public_path__ #}
 {% if not craft.webpackAssets.isPublicPathAbsoluteUrl() %}
 <script>
     runtime_webpack_public_path = '{{ siteUrl }}assets/';
