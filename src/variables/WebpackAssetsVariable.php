@@ -47,6 +47,10 @@ class WebpackAssetsVariable
         return $tags;
     }
 
+    public function isPublicPathAbsoluteUrl()
+    {
+        return WebpackAssets::$plugin->jsonReader->isPublicPathAbsoluteUrl();
+    }
 
     /**
      * Create CSS tag from file
