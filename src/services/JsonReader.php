@@ -164,12 +164,30 @@ class JsonReader extends Component
     private function transformToAbsolutePath($paths)
     {
         return array_map(function ($path) {
+            /**
+             * @param $path
+             * @return null|string|string[]
+             */
+
             if ($this->isRelativePath($path)) {
+                $path = $this->removeLeadingSlash($path);
+
                 return Craft::getAlias('@web') . '/' . $path;
             }
 
             return $path;
         }, $paths);
+    }
+
+    /**
+     * @param $path
+     * @return null|string|string[]
+     */
+    private function removeLeadingSlash($path)
+    {
+        $path = preg_replace('#^/#', '', $path);
+
+        return $path;
     }
 
     /**
