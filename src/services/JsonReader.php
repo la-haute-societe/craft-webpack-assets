@@ -151,6 +151,7 @@ class JsonReader extends Component
 
         $publicPath = $webpackOutput['files']['publicPath'];
         $startWithHttp = (strpos($publicPath, 'http') === 0);
+
         return $startWithHttp;
     }
 
