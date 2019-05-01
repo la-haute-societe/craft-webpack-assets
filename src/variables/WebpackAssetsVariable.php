@@ -59,6 +59,10 @@ class WebpackAssetsVariable
      */
     private function getCssTagFromFile($file)
     {
+        $config = \Craft::$app->config->getConfigFromFile('webpackassets');
+
+        if(key_exists('cssTagTemplate', $config)) return $config['cssTagTemplate']($file);
+
         return '<link rel="stylesheet" href="' . $file . '"/>';
     }
 
@@ -69,6 +73,10 @@ class WebpackAssetsVariable
      */
     private function getJsTagFromFile($file)
     {
+        $config = \Craft::$app->config->getConfigFromFile('webpackassets');
+
+        if(key_exists('jsTagTemplate', $config)) return $config['jsTagTemplate']($file);
+
         return '<script src="' . $file . '"></script>';
     }
 }
