@@ -75,7 +75,6 @@ class WebpackAssetsVariable
     {
         $config = \Craft::$app->config->getConfigFromFile('webpackassets');
 
-
         if(key_exists('jsTagTemplate', $config)) return $config['jsTagTemplate']($file);
 
         return '<script src="' . $file . '"></script>';
